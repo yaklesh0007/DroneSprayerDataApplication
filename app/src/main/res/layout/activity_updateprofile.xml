@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.UpdateprofileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayoutforprofileupdate"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update your information!!"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#06A6BA"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/Etupdatefullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Full Name"
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:textColor="#0F40EF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:id="@+id/EtupdatePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Phone"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:textColor="#0F40EF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+        android:id="@+id/UpdateRdoGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:tooltipText="UpdateGender">
+
+        <RadioButton
+            android:id="@+id/UpdateRdoMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/UpdateRdoFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/UpdateRdoOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="Other" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnUpdateProfileinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape"
+        android:text="Update profile info"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
